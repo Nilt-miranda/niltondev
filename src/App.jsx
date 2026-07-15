@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from 'react-icons/fa';
 import './styles/theme.css';
 import Home from './pages/Home';
 import Projetos from './pages/Projetos';
@@ -18,6 +19,30 @@ export default function App() {
         <Route path="/projetos" element={<Projetos />} />
         <Route path="/contato" element={<Contato />} />
       </Routes>
+
+      {/* Rodapé global */}
+      <footer className="site-footer">
+        <div className="footer-inner">
+          <div>
+            <h3 className="footer-title">Nilton Pimentel Miranda</h3>
+            <p className="text-secondary" style={{ margin: 0 }}>Desenvolvedor Fullstack</p>
+          </div>
+
+          <div className="footer-contact">
+            <a className="link footer-email" href="mailto:niltonpgvm@gmail.com">
+              <FaEnvelope /> niltonpgvm@gmail.com
+            </a>
+            <div className="social-icons">
+              <a href="https://github.com/Nilt-miranda" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub size={24} /></a>
+              <a href="https://www.linkedin.com/in/nilton-pgvmiranda" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin size={24} /></a>
+              <a href="https://www.instagram.com/nilton_88" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram size={24} /></a>
+            </div>
+          </div>
+        </div>
+        <p className="footer-copy text-secondary">
+          © {new Date().getFullYear()} Nilton Pimentel Miranda. Todos os direitos reservados.
+        </p>
+      </footer>
     </Router>
   );
 }
