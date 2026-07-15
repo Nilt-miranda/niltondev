@@ -33,6 +33,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      # SPA fallback: GitHub Pages serve 404.html para rotas inexistentes,
+      # então o React Router consegue tratar links diretos (ex: /projetos)
+      - name: Copy index.html to 404.html (SPA fallback)
+        run: cp dist/index.html dist/404.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
