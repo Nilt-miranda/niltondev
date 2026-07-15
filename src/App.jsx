@@ -7,7 +7,7 @@ import Contato from './pages/Contato';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <nav style={{background: '#1E1E1E', padding: '1rem', display: 'flex', gap: '2rem', justifyContent: 'center'}}>
         <Link className="link" to="/">Home</Link>
         <Link className="link" to="/projetos">Projetos</Link>
