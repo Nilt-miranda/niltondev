@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+
+// WhatsApp: 55 + DDD + número (só dígitos). Ex: "5511999999999"
+const WHATSAPP = "SEU_NUMERO_AQUI";
 import './styles/theme.css';
 import Home from './pages/Home';
 import Projetos from './pages/Projetos';
@@ -36,6 +39,7 @@ export default function App() {
               <a href="https://github.com/Nilt-miranda" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub size={24} /></a>
               <a href="https://www.linkedin.com/in/nilton-pgvmiranda" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin size={24} /></a>
               <a href="https://www.instagram.com/nilton_88" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram size={24} /></a>
+              <a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp size={24} /></a>
             </div>
           </div>
         </div>

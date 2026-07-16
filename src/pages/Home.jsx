@@ -2,7 +2,10 @@ import React from 'react';
 import '../styles/theme.css';
 import perfil from '../assets/perfil.png';
 import { useEffect, useState } from "react";
-import { FaNodeJs, FaPython, FaDatabase, FaDocker, FaGitAlt, FaNetworkWired, FaCss3 } from "react-icons/fa";
+import { FaNodeJs, FaPython, FaDatabase, FaDocker, FaGitAlt, FaNetworkWired, FaCss3, FaWhatsapp, FaGraduationCap, FaLinux, FaComments } from "react-icons/fa";
+
+// WhatsApp: 55 + DDD + número (só dígitos). Ex: "5511999999999"
+const WHATSAPP = "SEU_NUMERO_AQUI";
 
 export default function Home() {
   const [animated, setAnimated] = useState(false);
@@ -26,14 +29,52 @@ export default function Home() {
         <img src={perfil} alt="Foto de Nilton Miranda" style={{width: '160px', height: '160px', objectFit: 'cover', borderRadius: '50%', boxShadow: '0 2px 16px #A64DFF44'}} />
       </div>
       <div style={{flex: 1, minWidth: '260px'}}>
-        <h1 style={{color: '#A64DFF', marginBottom: '0.5rem'}}>Olá, eu sou Nilton Pimentel Miranda!</h1>
+        <h1 style={{color: '#A64DFF', marginBottom: '0.5rem'}}>Olá, eu sou Nilton Miranda!</h1>
         <h2 style={{color: '#EAEAEA', fontWeight: 600, marginBottom: '1rem'}}>Desenvolvedor Fullstack</h2>
-        <p className="text-secondary" style={{marginBottom: '1.2rem'}}>Estudando engenheira da Computação na Faculdade de Informática e Administração Paulista (FIAP). Pontos fortes em Python, CSS3, HTML5, Vs Code e uma experiência em Docker e Linux. Comunicativo e com vontade de trabalhar em um ambiente que vá gerar grande processo evolutivo</p>
+        <p className="text-secondary" style={{marginBottom: '0.8rem'}}>
+          Estudante de Engenharia da Computação na FIAP, com pontos fortes em Python, CSS3, HTML5
+          e experiência prática em Docker e Linux.
+        </p>
+        <p className="text-secondary" style={{marginBottom: '1.4rem'}}>
+          Comunicativo e com vontade de trabalhar em um ambiente que gere um grande processo evolutivo.
+        </p>
+
+        {/* Quadrados de destaque */}
+        <div className="highlight-grid">
+          <div className="highlight-box">
+            <span className="highlight-icon"><FaGraduationCap /></span>
+            <div>
+              <strong>Eng. da Computação</strong>
+              <span className="text-secondary">FIAP · 2023–2027</span>
+            </div>
+          </div>
+          <div className="highlight-box">
+            <span className="highlight-icon"><FaPython /></span>
+            <div>
+              <strong>Python & Django</strong>
+              <span className="text-secondary">Backend & APIs</span>
+            </div>
+          </div>
+          <div className="highlight-box">
+            <span className="highlight-icon"><FaLinux /></span>
+            <div>
+              <strong>Docker & Linux</strong>
+              <span className="text-secondary">Ambientes & deploy</span>
+            </div>
+          </div>
+          <div className="highlight-box">
+            <span className="highlight-icon"><FaComments /></span>
+            <div>
+              <strong>Comunicativo</strong>
+              <span className="text-secondary">Trabalho em equipe</span>
+            </div>
+          </div>
+        </div>
         
         
         <div style={{marginBottom: '1.2rem'}}>
           <span style={{color: '#A64DFF', fontWeight: 600}}> No momento estudando:</span><br />
-          <span className="text-secondary">Python,Django,Cybersegurança e Salesforce</span>
+          <span className="text-secondary">Python,Django e next.js</span>
         </div>
 
         {/* Habilidades */}
@@ -86,8 +127,12 @@ export default function Home() {
           </div>
                       
         </section>
-        <div style={{width: '100%', display: 'flex', justifyContent: 'left', marginTop: '2rem'}}>
-          <a className="button" href="/contato" style={{background: '#A64DFF', color: '#EAEAEA', padding: '0.7rem 1.4rem', borderRadius: '4px', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.1rem', boxShadow: '0 2px 8px #A64DFF22'}}>💬 Gostou? entre contato</a>
+        <div style={{width: '100%', display: 'flex', justifyContent: 'left', marginTop: '2rem', gap: '1rem', flexWrap: 'wrap'}}>
+          <a className="whatsapp-btn"
+            href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Olá, Nilton! Vi seu portfólio e gostaria de conversar.')}`}
+            target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp size={20} /> Gostou? Chama no WhatsApp
+          </a>
             </div>
       </div>
     </section>

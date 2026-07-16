@@ -50,13 +50,9 @@ export default function Projetos() {
 
         <div className="experience-content">
           <h2 className="text-main">SaltCode</h2>
-          <h4 className="text-main">OUTUBRO 2025 - Presente</h4>
+          <h4 className="text-main">FEVEREIRO 2026 - Presente</h4>
           <h4 style={{ color: '#A64DFF', margin: '0.2rem 0' }}>
             Desenvolvedor Júnior · Tempo integral
-            <span className="text-secondary" style={{ fontWeight: 400 }}> (fev 2026 - presente)</span>
-          </h4>
-          <h4 className="text-secondary" style={{ margin: '0 0 0.4rem' }}>
-            Desenvolvedor · Estágio (out 2025 - fev 2026)
           </h4>
 
           <p className="text-secondary">
@@ -64,6 +60,42 @@ export default function Projetos() {
             comunicação entre o front-end e o banco de dados, correção de bugs em partes
             específicas do código para manter o sistema funcionando corretamente e execução de
             operações em banco de dados. Trabalho com boas práticas, Git e Docker.
+          </p>
+
+          <div className="tech-badges">
+            <span className="badge">Node.js</span>
+            <span className="badge">Python</span>
+            <span className="badge">Docker</span>
+            <span className="badge">API REST</span>
+            <span className="badge">Git</span>
+            <span className="badge">SQL</span>
+          </div>
+
+          <a className="link-button"
+            href="https://www.linkedin.com/in/nilton-pgvmiranda"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver mais
+          </a>
+        </div>
+      </div>
+
+      {/* SaltCode - Estágio (anterior) */}
+      <div className="card-bg experience-card">
+        <img src={saltcodeLogo} alt="Logo SaltCode" className="company-logo" />
+
+        <div className="experience-content">
+          <h2 className="text-main">SaltCode</h2>
+          <h4 className="text-main">OUTUBRO 2025 - FEVEREIRO 2026</h4>
+          <h4 style={{ color: '#A64DFF', margin: '0.2rem 0' }}>
+            Desenvolvedor Backend · Estágio
+          </h4>
+
+          <p className="text-secondary">
+            Início na empresa como estagiário de desenvolvimento backend: auxílio na criação de
+            APIs, integração de sistemas, correção de bugs e modelagem de banco de dados.
+            Primeiro contato com o fluxo de trabalho da equipe, boas práticas, Git e Docker.
           </p>
 
           <div className="tech-badges">
@@ -167,63 +199,6 @@ export default function Projetos() {
           </div>
         </div>
       </div>
-
-      {/* Importador CSV */}
-      <div className="card-bg project-card">
-        <div>
-          <h2 className="text-main">Importador de CSV</h2>
-          <p className="text-secondary">
-            Criação de um importador de CSV para auto-criação de cliente, eliminando a necessidade de criação manual
-            e acelerando o fluxo da equipe de CX.
-          </p>
-        </div>
-
-        {/* Badges + botão alinhados à direita */}
-        <div className="project-footer">
-          <div className="tech-badges">
-            <span className="badge">React</span>
-            <span className="badge">Python</span>
-            <span className="badge">CSS</span>
-            <span className="badge">Django</span>
-            <span className="badge">JSON</span>
-          </div>
-
-          <a className="link-button" href="#" target="_blank" rel="noopener noreferrer">
-            Ver projeto
-          </a>
-        </div>
-      </div>
-
-      {/* Portfolio */}
-      <div className="card-bg project-card">
-        <div>
-          <h2 className="text-main">Portfolio Web</h2>
-          <p className="text-secondary">
-            Site pessoal desenvolvido com React e Vite.
-          </p>
-        </div>
-
-        {/* Badges + botão alinhados à direita */}
-        <div className="project-footer">
-          <div className="tech-badges">
-            <span className="badge">React</span>
-            <span className="badge">Vite</span>
-            <span className="badge">CSS</span>
-            <span className="badge">HTML</span>
-            <span className="badge">JSON</span>
-          </div>
-
-          <a className="link-button" href="#" target="_blank" rel="noopener noreferrer">
-            Ver projeto
-          </a>
-        </div>
-      </div>
-
-      <ul>
-        <li className="text-secondary">
-          💡 Dica: Edite este conteúdo em <code>src/pages/Projetos.jsx</code> para adicionar seus próprios projetos.
-        </li>
-      </ul>
 
     </section>
   );
