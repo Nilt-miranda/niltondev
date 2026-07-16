@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/theme.css';
 import perfil from '../assets/perfil.png';
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { FaNodeJs, FaPython, FaDatabase, FaDocker, FaGitAlt, FaNetworkWired, FaCss3, FaWhatsapp, FaGraduationCap, FaLinux, FaComments, FaReact, FaFistRaised, FaFutbol, FaTv } from "react-icons/fa";
 
 // WhatsApp: 55 + DDD + número (só dígitos). Ex: "5511999999999"
@@ -12,6 +12,11 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => setAnimated(true), 300);
   }, []);
+
+  const certRef = useRef(null);
+  const scrollCerts = (dir) => {
+    if (certRef.current) certRef.current.scrollBy({ left: dir * 280, behavior: "smooth" });
+  };
 
   const skills = [
     { name: "Node.js", level: 65, icon: <FaNodeJs /> },
@@ -117,7 +122,9 @@ export default function Home() {
             <li className="text-secondary emoji">🇪🇸 Espanhol — Intermediário</li>
           </ul>
           <h2 style={{ color: "#A64DFF", marginTop: "2rem" }}>Certificações</h2>
-          <div className="certifications-container">
+          <div className="cert-carousel">
+            <button type="button" className="cert-nav" onClick={() => scrollCerts(-1)} aria-label="Anterior">‹</button>
+            <div className="certifications-container" ref={certRef}>
             <div className="cert-item">
               <h4>Python</h4>
               <p> ALURA - 2023</p>
@@ -138,6 +145,8 @@ export default function Home() {
               <p>FIAP - 2024</p>
               <a href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/119058/93303bd463bb2a4ebfd38f8cc4ccc7a0/certificado.png" target="_blank">Ver certificado</a>
             </div>
+            </div>
+            <button type="button" className="cert-nav" onClick={() => scrollCerts(1)} aria-label="Próximo">›</button>
           </div>
 
           <h2 style={{ color: "#A64DFF", marginTop: "2rem" }}>Curiosidades / Hobbies</h2>
