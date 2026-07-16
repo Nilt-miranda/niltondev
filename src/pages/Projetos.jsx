@@ -44,22 +44,21 @@ export default function Projetos() {
         </div>
       </div>
 
-      {/* SaltCode */}
+      {/* SaltCode - Estágio (anterior) */}
       <div className="card-bg experience-card">
         <img src={saltcodeLogo} alt="Logo SaltCode" className="company-logo" />
 
         <div className="experience-content">
           <h2 className="text-main">SaltCode</h2>
-          <h4 className="text-main">FEVEREIRO 2026 - Presente</h4>
+          <h4 className="text-main">OUTUBRO 2025 - FEVEREIRO 2026</h4>
           <h4 style={{ color: '#A64DFF', margin: '0.2rem 0' }}>
-            Desenvolvedor Júnior · Tempo integral
+            Desenvolvedor Backend · Estágio
           </h4>
 
           <p className="text-secondary">
-            Desenvolvimento e implementação de funcionalidades, criação de novas APIs para
-            comunicação entre o front-end e o banco de dados, correção de bugs em partes
-            específicas do código para manter o sistema funcionando corretamente e execução de
-            operações em banco de dados. Trabalho com boas práticas, Git e Docker.
+            Início na empresa como estagiário de desenvolvimento backend: auxílio na criação de
+            APIs, integração de sistemas, correção de bugs e modelagem de banco de dados.
+            Primeiro contato com o fluxo de trabalho da equipe, boas práticas, Git e Docker.
           </p>
 
           <div className="tech-badges">
@@ -81,21 +80,22 @@ export default function Projetos() {
         </div>
       </div>
 
-      {/* SaltCode - Estágio (anterior) */}
+      {/* SaltCode - Júnior (atual) */}
       <div className="card-bg experience-card">
         <img src={saltcodeLogo} alt="Logo SaltCode" className="company-logo" />
 
         <div className="experience-content">
           <h2 className="text-main">SaltCode</h2>
-          <h4 className="text-main">OUTUBRO 2025 - FEVEREIRO 2026</h4>
+          <h4 className="text-main">FEVEREIRO 2026 - Presente</h4>
           <h4 style={{ color: '#A64DFF', margin: '0.2rem 0' }}>
-            Desenvolvedor Backend · Estágio
+            Desenvolvedor Júnior · Tempo integral
           </h4>
 
           <p className="text-secondary">
-            Início na empresa como estagiário de desenvolvimento backend: auxílio na criação de
-            APIs, integração de sistemas, correção de bugs e modelagem de banco de dados.
-            Primeiro contato com o fluxo de trabalho da equipe, boas práticas, Git e Docker.
+            Desenvolvimento e implementação de funcionalidades, criação de novas APIs para
+            comunicação entre o front-end e o banco de dados, correção de bugs em partes
+            específicas do código para manter o sistema funcionando corretamente e execução de
+            operações em banco de dados. Trabalho com boas práticas, Git e Docker.
           </p>
 
           <div className="tech-badges">
