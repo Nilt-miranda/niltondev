@@ -29,6 +29,3 @@ Este é um site de portfólio para programador, criado com React e Vite.
 - Para atualizar habilidades, edite `src/pages/Habilidades.jsx`.
 - Para alterar o e-mail, edite `src/pages/Contato.jsx`.
 
----
-
-Feito por [Nilton Pimentel G V Miranda].
