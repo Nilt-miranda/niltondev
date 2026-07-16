@@ -2,10 +2,10 @@ import React from 'react';
 import '../styles/theme.css';
 import perfil from '../assets/perfil.png';
 import { useEffect, useState } from "react";
-import { FaNodeJs, FaPython, FaDatabase, FaDocker, FaGitAlt, FaNetworkWired, FaCss3, FaWhatsapp, FaGraduationCap, FaLinux, FaComments } from "react-icons/fa";
+import { FaNodeJs, FaPython, FaDatabase, FaDocker, FaGitAlt, FaNetworkWired, FaCss3, FaWhatsapp, FaGraduationCap, FaLinux, FaComments, FaJava, FaReact } from "react-icons/fa";
 
 // WhatsApp: 55 + DDD + número (só dígitos). Ex: "5511999999999"
-const WHATSAPP = "SEU_NUMERO_AQUI";
+const WHATSAPP = "5511972270401";
 
 export default function Home() {
   const [animated, setAnimated] = useState(false);
@@ -32,8 +32,8 @@ export default function Home() {
         <h1 style={{color: '#A64DFF', marginBottom: '0.5rem'}}>Olá, eu sou Nilton Miranda!</h1>
         <h2 style={{color: '#EAEAEA', fontWeight: 600, marginBottom: '1rem'}}>Desenvolvedor Fullstack</h2>
         <p className="text-secondary" style={{marginBottom: '0.8rem'}}>
-          Estudante de Engenharia da Computação na FIAP, com pontos fortes em Python, CSS3, HTML5
-          e experiência prática em Docker e Linux.
+          Estudante de Engenharia da Computação na FIAP, com pontos fortes em Python, CSS3,
+          JavaScript e React, além de experiência prática em Docker e Linux.
         </p>
         <p className="text-secondary" style={{marginBottom: '1.4rem'}}>
           Comunicativo e com vontade de trabalhar em um ambiente que gere um grande processo evolutivo.
@@ -45,7 +45,7 @@ export default function Home() {
             <span className="highlight-icon"><FaGraduationCap /></span>
             <div>
               <strong>Eng. da Computação</strong>
-              <span className="text-secondary">FIAP · 2023–2027</span>
+              <span className="text-secondary">Graduação em andamento</span>
             </div>
           </div>
           <div className="highlight-box">
@@ -53,6 +53,20 @@ export default function Home() {
             <div>
               <strong>Python & Django</strong>
               <span className="text-secondary">Backend & APIs</span>
+            </div>
+          </div>
+          <div className="highlight-box">
+            <span className="highlight-icon"><FaReact /></span>
+            <div>
+              <strong>React & TypeScript</strong>
+              <span className="text-secondary">Front-end & mobile</span>
+            </div>
+          </div>
+          <div className="highlight-box">
+            <span className="highlight-icon"><FaJava /></span>
+            <div>
+              <strong>Java & Spring</strong>
+              <span className="text-secondary">Back-end & REST</span>
             </div>
           </div>
           <div className="highlight-box">

@@ -278,12 +278,23 @@ body {
   color: #0D0D0D;
 }
 
+/* ---------- Layout: rodapé sempre no fim ---------- */
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1 0 auto;
+}
+
 /* ---------- Rodapé ---------- */
 .site-footer {
   background: #1E1E1E;
   border-top: 1px solid #2a2a2a;
   padding: 2rem;
-  margin-top: 3rem;
+  margin-top: auto;
 }
 
 .footer-inner {
