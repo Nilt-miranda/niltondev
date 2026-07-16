@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/theme.css';
 import perfil from '../assets/perfil.png';
 import { useEffect, useState } from "react";
-import { FaNodeJs, FaPython, FaDatabase, FaDocker, FaGitAlt, FaNetworkWired, FaCss3, FaWhatsapp, FaGraduationCap, FaLinux, FaComments, FaJava, FaReact } from "react-icons/fa";
+import { FaNodeJs, FaPython, FaDatabase, FaDocker, FaGitAlt, FaNetworkWired, FaCss3, FaWhatsapp, FaGraduationCap, FaLinux, FaComments, FaReact } from "react-icons/fa";
 
 // WhatsApp: 55 + DDD + número (só dígitos). Ex: "5511999999999"
 const WHATSAPP = "5511972270401";
@@ -63,10 +63,10 @@ export default function Home() {
             </div>
           </div>
           <div className="highlight-box">
-            <span className="highlight-icon"><FaJava /></span>
+            <span className="highlight-icon"><FaNodeJs /></span>
             <div>
-              <strong>Java & Spring</strong>
-              <span className="text-secondary">Back-end & REST</span>
+              <strong>Node.js & APIs</strong>
+              <span className="text-secondary">Back-end JavaScript</span>
             </div>
           </div>
           <div className="highlight-box">

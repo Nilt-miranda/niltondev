@@ -205,9 +205,8 @@ export default function Projetos() {
         <div>
           <h2 className="text-main">Marcação de Consultas Médicas</h2>
           <p className="text-secondary">
-            Sistema completo para agendamento de consultas: aplicativo em React Native /
-            TypeScript, backend em Java (Spring) e API REST. Inclui painel administrativo,
-            fluxo de marcação e gestão de consultas.
+            Aplicativo mobile em React Native / TypeScript para agendamento de consultas, com
+            painel administrativo, fluxo de marcação e gestão de consultas consumindo API REST.
           </p>
         </div>
 
@@ -215,12 +214,37 @@ export default function Projetos() {
           <div className="tech-badges">
             <span className="badge">React Native</span>
             <span className="badge">TypeScript</span>
-            <span className="badge">Java</span>
-            <span className="badge">Spring</span>
             <span className="badge">API REST</span>
           </div>
 
-          <a className="link-button" href="https://github.com/Nilt-miranda?tab=repositories" target="_blank" rel="noopener noreferrer">
+          <a className="link-button" href="https://github.com/Nilt-miranda/marcacaoDeConsultasMedicas-EC" target="_blank" rel="noopener noreferrer">
+            Ver no GitHub
+          </a>
+        </div>
+      </div>
+
+      {/* Challenge FESTO - Digital Twin */}
+      <div className="card-bg project-card">
+        <div>
+          <h2 className="text-main">Digital Twin — Challenge FESTO / FIAP</h2>
+          <p className="text-secondary">
+            Gêmeo digital de um sistema pneumático com ESP32 e sensores de pressão, temperatura e
+            fluxo, transmitindo dados em tempo real via MQTT. Backend em Node.js processa e
+            armazena no MongoDB, e um dashboard exibe as leituras em tempo real.
+          </p>
+        </div>
+
+        <div className="project-footer">
+          <div className="tech-badges">
+            <span className="badge">ESP32</span>
+            <span className="badge">MQTT</span>
+            <span className="badge">Node.js</span>
+            <span className="badge">Express</span>
+            <span className="badge">MongoDB</span>
+            <span className="badge">Chart.js</span>
+          </div>
+
+          <a className="link-button" href="https://github.com/Nilt-miranda/challegerfesto" target="_blank" rel="noopener noreferrer">
             Ver no GitHub
           </a>
         </div>
