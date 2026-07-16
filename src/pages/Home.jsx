@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/theme.css';
 import perfil from '../assets/perfil.png';
 import { useEffect, useState } from "react";
-import { FaNodeJs, FaPython, FaDatabase, FaDocker, FaGitAlt, FaNetworkWired, FaCss3, FaWhatsapp, FaGraduationCap, FaLinux, FaComments, FaReact } from "react-icons/fa";
+import { FaNodeJs, FaPython, FaDatabase, FaDocker, FaGitAlt, FaNetworkWired, FaCss3, FaWhatsapp, FaGraduationCap, FaLinux, FaComments, FaReact, FaFistRaised, FaFutbol, FaTv } from "react-icons/fa";
 
 // WhatsApp: 55 + DDD + número (só dígitos). Ex: "5511999999999"
 const WHATSAPP = "5511972270401";
@@ -139,7 +139,14 @@ export default function Home() {
               <a href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/119058/93303bd463bb2a4ebfd38f8cc4ccc7a0/certificado.png" target="_blank">Ver certificado</a>
             </div>
           </div>
-                      
+
+          <h2 style={{ color: "#A64DFF", marginTop: "2rem" }}>Curiosidades / Hobbies</h2>
+          <div className="hobbies-container">
+            <span className="hobby-item"><FaFistRaised /> Jiu-jitsu & Judô</span>
+            <span className="hobby-item"><FaFutbol /> Futebol</span>
+            <span className="hobby-item"><FaTv /> Séries</span>
+          </div>
+
         </section>
         <div style={{width: '100%', display: 'flex', justifyContent: 'left', marginTop: '2rem', gap: '1rem', flexWrap: 'wrap'}}>
           <a className="whatsapp-btn"

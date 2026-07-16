@@ -256,6 +256,36 @@ body {
   font-size: 0.8rem;
 }
 
+/* ---------- Curiosidades / Hobbies ---------- */
+.hobbies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.hobby-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #1E1E1E;
+  border: 1px solid #2a2a2a;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  color: #EAEAEA;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.hobby-item:hover {
+  border-color: #A64DFF;
+  transform: translateY(-2px);
+}
+
+.hobby-item svg {
+  color: #A64DFF;
+}
+
 /* ---------- Botão WhatsApp ---------- */
 .whatsapp-btn {
   display: inline-flex;
