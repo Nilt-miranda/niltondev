@@ -92,8 +92,12 @@ export default function Home() {
         
         
         <div style={{marginBottom: '1.2rem'}}>
-          <span style={{color: '#A64DFF', fontWeight: 600}}> No momento estudando:</span><br />
-          <span className="text-secondary">Python,Django e next.js</span>
+          <span style={{color: '#A64DFF', fontWeight: 600}}>Curiosidades / Hobbies:</span>
+          <div className="hobbies-container">
+            <span className="hobby-item"><FaFistRaised /> Jiu-jitsu & Judô</span>
+            <span className="hobby-item"><FaFutbol /> Futebol</span>
+            <span className="hobby-item"><FaTv /> Séries</span>
+          </div>
         </div>
 
         {/* Habilidades */}
@@ -145,15 +149,23 @@ export default function Home() {
               <p>FIAP - 2024</p>
               <a href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/119058/93303bd463bb2a4ebfd38f8cc4ccc7a0/certificado.png" target="_blank">Ver certificado</a>
             </div>
+            <div className="cert-item">
+              <h4>Blockchain</h4>
+              <p>FIAP - 2025</p>
+              <a href="https://on.fiap.com.br/local/nanocourses/gerar_certificado.php?chave=f7c94786b6e3e91babd960c524c1fa51&action=view" target="_blank" rel="noopener noreferrer">Ver certificado</a>
+            </div>
+            <div className="cert-item">
+              <h4>DevOps</h4>
+              <p>FIAP - 2026</p>
+              <a href="https://on.fiap.com.br/local/nanocourses/gerar_certificado.php?chave=94e680191a71e44f6251e56a90c2ea1b&action=view" target="_blank" rel="noopener noreferrer">Ver certificado</a>
+            </div>
+            <div className="cert-item">
+              <h4>Business Management &amp; IT Services</h4>
+              <p>FIAP - 2026</p>
+              <a href="https://on.fiap.com.br/local/nanocourses/gerar_certificado.php?chave=f14b6b2410b8c2af8a328374cb540875&action=view" target="_blank" rel="noopener noreferrer">Ver certificado</a>
+            </div>
             </div>
             <button type="button" className="cert-nav" onClick={() => scrollCerts(1)} aria-label="Próximo">›</button>
-          </div>
-
-          <h2 style={{ color: "#A64DFF", marginTop: "2rem" }}>Curiosidades / Hobbies</h2>
-          <div className="hobbies-container">
-            <span className="hobby-item"><FaFistRaised /> Jiu-jitsu & Judô</span>
-            <span className="hobby-item"><FaFutbol /> Futebol</span>
-            <span className="hobby-item"><FaTv /> Séries</span>
           </div>
 
         </section>
