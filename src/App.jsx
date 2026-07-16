@@ -31,7 +31,7 @@ export default function App() {
         <footer className="site-footer">
           <div className="footer-inner">
             <div>
-              <h3 className="footer-title">Nilton Pimentel Miranda</h3>
+              <h3 className="footer-title">Nilton Miranda</h3>
               <p className="text-secondary" style={{ margin: 0 }}>Desenvolvedor Fullstack</p>
             </div>
 
