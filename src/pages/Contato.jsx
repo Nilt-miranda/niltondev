@@ -10,7 +10,7 @@ export default function Contato() {
     <section className="main-bg text-main">
       <div className="contact-content">
         <h2 style={{ color: '#ffffffff' }}>Contato:</h2>
-        <p>✉️ <a className="link" href="mailto:niltonpgvm@gmail.com">niltonpgvm@gmail.com</a></p>
+        <p> <a className="link" href="mailto:niltonpgvm@gmail.com">niltonpgvm@gmail.com</a></p>
 
         <a className="whatsapp-btn" style={{ marginTop: '0.5rem' }}
           href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Olá, Nilton! Vi seu portfólio e gostaria de conversar.')}`}
