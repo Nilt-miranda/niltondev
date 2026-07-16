@@ -3,7 +3,7 @@ import '../styles/theme.css';
 import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 // WhatsApp: 55 + DDD + número (só dígitos). Ex: "5511999999999"
-const WHATSAPP = "SEU_NUMERO_AQUI";
+const WHATSAPP = "5511972270401";
 
 export default function Contato() {
   return (
