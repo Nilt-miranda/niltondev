@@ -197,13 +197,40 @@ export default function Projetos() {
             <span className="badge">Prisma</span>
             <span className="badge">Tailwind</span>
           </div>
+
+          <a className="link-button" href="https://barracaodapraca.com.br" target="_blank" rel="noopener noreferrer">
+            Ver site
+          </a>
+        </div>
+      </div>
+
+      {/* Capitano FC - E-commerce */}
+      <div className="card-bg project-card">
+        <div>
+          <h2 className="text-main">Capitano FC — E-commerce de Camisas</h2>
+          <p className="text-secondary">
+            Loja online completa de camisas de futebol (dropshipping): catálogo por categoria,
+            busca, carrinho, checkout com endereço por CEP, pagamento via Mercado Pago, contas de
+            usuário, rastreamento de pedidos e painel administrativo com gestão de produtos e pedidos.
+          </p>
+        </div>
+
+        <div className="project-footer">
+          <div className="tech-badges">
+            <span className="badge">Next.js</span>
+            <span className="badge">TypeScript</span>
+            <span className="badge">Tailwind</span>
+            <span className="badge">Prisma</span>
+            <span className="badge">Mercado Pago</span>
+            <span className="badge">JWT</span>
+          </div>
         </div>
       </div>
 
       {/* Marcação de Consultas Médicas */}
       <div className="card-bg project-card">
         <div>
-          <h2 className="text-main">Marcação de Consultas Médicas</h2>
+          <h2 className="text-main">Marcação de Consultas Médicas - FIAP</h2>
           <p className="text-secondary">
             Aplicativo mobile em React Native / TypeScript para agendamento de consultas, com
             painel administrativo, fluxo de marcação e gestão de consultas consumindo API REST.
