@@ -14,16 +14,16 @@ export default function Home() {
   };
 
   const skills = [
-    { name: "TypeScript / JavaScript", level: "Avançado", icon: <FaJs /> },
-    { name: "React / React Native", level: "Avançado", icon: <FaReact /> },
-    { name: "Node.js (NestJS / Express)", level: "Avançado", icon: <FaNodeJs /> },
-    { name: "Python (Django / Flask)", level: "Avançado", icon: <FaPython /> },
-    { name: "API REST", level: "Avançado", icon: <FaNetworkWired /> },
-    { name: "HTML / CSS", level: "Avançado", icon: <FaCss3 /> },
-    { name: "Git / GitHub / GitFlow", level: "Avançado", icon: <FaGitAlt /> },
-    { name: "SQL / PostgreSQL / Prisma", level: "Intermediário", icon: <FaDatabase /> },
-    { name: "Docker e Docker Compose", level: "Intermediário", icon: <FaDocker /> },
-    { name: "Java / Spring Boot", level: "Intermediário", icon: <FaJava /> },
+    { name: "TypeScript / JavaScript", icon: <FaJs /> },
+    { name: "React / React Native", icon: <FaReact /> },
+    { name: "Node.js (NestJS / Express)", icon: <FaNodeJs /> },
+    { name: "Python (Django / Flask)", icon: <FaPython /> },
+    { name: "API REST", icon: <FaNetworkWired /> },
+    { name: "HTML / CSS", icon: <FaCss3 /> },
+    { name: "Git / GitHub / GitFlow", icon: <FaGitAlt /> },
+    { name: "SQL / PostgreSQL / Prisma", icon: <FaDatabase /> },
+    { name: "Docker e Docker Compose", icon: <FaDocker /> },
+    { name: "Java / Spring Boot", icon: <FaJava /> },
   ];
 
   return (
@@ -107,7 +107,6 @@ export default function Home() {
                 <div className="skill-header">
                   <span className="skill-icon">{skill.icon}</span>
                   <span className="skill-name">{skill.name}</span>
-                  <span className="skill-percent">{skill.level}</span>
                 </div>
               </div>
             ))}

@@ -185,12 +185,6 @@ body {
   margin-left: 8px;
 }
 
-.skill-percent {
-  font-size: 0.85rem;
-  color: #A64DFF;
-  white-space: nowrap;
-}
-
 .experience-card, .project-card {
   padding: 1rem;
   border-radius: 8px;
