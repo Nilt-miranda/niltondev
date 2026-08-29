@@ -1,31 +1,29 @@
 import React from 'react';
 import '../styles/theme.css';
 import perfil from '../assets/perfil.png';
-import { useEffect, useState, useRef } from "react";
-import { FaNodeJs, FaPython, FaDatabase, FaDocker, FaGitAlt, FaNetworkWired, FaCss3, FaWhatsapp, FaGraduationCap, FaLinux, FaComments, FaReact, FaFistRaised, FaFutbol, FaTv } from "react-icons/fa";
+import { useRef } from "react";
+import { FaNodeJs, FaPython, FaDatabase, FaDocker, FaGitAlt, FaNetworkWired, FaCss3, FaWhatsapp, FaGraduationCap, FaLinux, FaComments, FaReact, FaFistRaised, FaFutbol, FaTv, FaJs, FaJava } from "react-icons/fa";
 
 // WhatsApp: 55 + DDD + número (só dígitos). Ex: "5511999999999"
 const WHATSAPP = "5511972270401";
 
 export default function Home() {
-  const [animated, setAnimated] = useState(false);
-  useEffect(() => {
-    setTimeout(() => setAnimated(true), 300);
-  }, []);
-
   const certRef = useRef(null);
   const scrollCerts = (dir) => {
     if (certRef.current) certRef.current.scrollBy({ left: dir * 280, behavior: "smooth" });
   };
 
   const skills = [
-    { name: "Node.js", level: 65, icon: <FaNodeJs /> },
-    { name: "Python (Django / Flask)", level: 100, icon: <FaPython /> },
-    { name: "SQL / PostgreSQL / MySQL", level: 65, icon: <FaDatabase /> },
-    { name: "API REST / GraphQL", level: 70, icon: <FaNetworkWired /> },
-    { name: "Docker e Docker Compose", level: 50, icon: <FaDocker /> },
-    { name: "Git / GitHub / GitFlow", level: 100, icon: <FaGitAlt /> },
-    { name: "HTML / CSS", level: 75, icon: <FaCss3 /> },
+    { name: "TypeScript / JavaScript", level: "Avançado", icon: <FaJs /> },
+    { name: "React / React Native", level: "Avançado", icon: <FaReact /> },
+    { name: "Node.js (NestJS / Express)", level: "Avançado", icon: <FaNodeJs /> },
+    { name: "Python (Django / Flask)", level: "Avançado", icon: <FaPython /> },
+    { name: "API REST", level: "Avançado", icon: <FaNetworkWired /> },
+    { name: "HTML / CSS", level: "Avançado", icon: <FaCss3 /> },
+    { name: "Git / GitHub / GitFlow", level: "Avançado", icon: <FaGitAlt /> },
+    { name: "SQL / PostgreSQL / Prisma", level: "Intermediário", icon: <FaDatabase /> },
+    { name: "Docker e Docker Compose", level: "Intermediário", icon: <FaDocker /> },
+    { name: "Java / Spring Boot", level: "Intermediário", icon: <FaJava /> },
   ];
 
   return (
@@ -109,15 +107,9 @@ export default function Home() {
                 <div className="skill-header">
                   <span className="skill-icon">{skill.icon}</span>
                   <span className="skill-name">{skill.name}</span>
-                  
+                  <span className="skill-percent">{skill.level}</span>
                 </div>
-                
-                  <div
-                    className="skill-level"
-                    style={{ width: animated ? `${skill.level}%` : "0%" }}
-                  ></div>
-                </div>
-              
+              </div>
             ))}
           </div>
           <h2 style={{ color: "#A64DFF", marginTop: "2rem" }}>Idiomas:</h2>

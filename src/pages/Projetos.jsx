@@ -204,6 +204,32 @@ export default function Projetos() {
         </div>
       </div>
 
+      {/* InkConnect */}
+      <div className="card-bg project-card">
+        <div>
+          <h2 className="text-main">InkConnect — App para o mercado de tatuagem</h2>
+          <p className="text-secondary">
+            Aplicativo de descoberta, orçamento e agendamento para tatuadores e clientes. O ciclo
+            roda fim a fim: o cliente pede o orçamento, o artista responde, o horário é escolhido,
+            o sinal é pago e, ao fim da sessão, os dois se avaliam. Monorepo com app em React
+            Native (Expo), site público em Next.js e um pacote de domínio puro coberto por testes
+            — a agenda é calculada em tempo real, em vez de armazenada, e o overbooking é barrado
+            por constraint no próprio banco.
+          </p>
+        </div>
+
+        <div className="project-footer">
+          <div className="tech-badges">
+            <span className="badge">React Native</span>
+            <span className="badge">Expo</span>
+            <span className="badge">Next.js</span>
+            <span className="badge">TypeScript</span>
+            <span className="badge">Drizzle ORM</span>
+            <span className="badge">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
       {/* Capitano FC - E-commerce */}
       <div className="card-bg project-card">
         <div>
